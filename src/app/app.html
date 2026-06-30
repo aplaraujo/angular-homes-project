@@ -1,14 +1,16 @@
 <main>
-    <header class="brand-name">
-        <img src="logo.svg" alt="Logo" class="brand-logo" aria-hidden="true">
-    </header>
+    <a [routerLink]="['/']">
+        <header class="brand-name">
+            <img src="logo.svg" alt="Logo" class="brand-logo" aria-hidden="true">
+        </header>
+    </a>
 
     <section class="content">
-        <app-home />
+        <router-outlet />
     </section>
 </main>
 
 
 
 
-<router-outlet />
+
